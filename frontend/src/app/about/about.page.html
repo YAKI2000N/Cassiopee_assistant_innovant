@@ -1,0 +1,149 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>About Page</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="about-container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card color="light" class="ion-margin-top pb-32">
+            <ion-card-header>
+              <ion-card-title class="heading-card">Application</ion-card-title>
+            </ion-card-header>
+            <div class="separator-line"></div>
+            <ion-card-content class="ion-padding-horizontal">
+              <p class="text">
+                <ion-text color="dark">
+                  A whole Application that facilitates your life when visiting other country. If you are a tourist or a stranger resident
+                  then this application will assist you by facilitating your searches of the ambassadors, nearest services and provides you informations 
+                  concerning your stay. 
+                </ion-text>
+              </p>
+              <p class="text ion-padding-top">
+                <ion-text color="dark">
+                 Use this application and save Your Time. All informations will be displayed in one click.  
+                </ion-text>
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" sizeLg="6" class="map-container">
+          <img src="assets/images/about/about-map.svg" alt="map image" />
+        </ion-col>
+        <ion-col size="12" sizeLg="6">
+          <ion-card color="light" class="pb-32">
+            <ion-card-header>
+              <ion-card-title class="heading-card">MAP VIEW</ion-card-title>
+            </ion-card-header>
+            <div class="separator-line"></div>
+            <ion-card-content class="ion-padding-bottom">
+              <p class="text">
+                <ion-text color="dark">
+                  Maps can be a useful tool for viewing services location &
+                  filter them by types. this also help you to know distances so
+                  that you know how far away one thing is from another.
+                </ion-text>
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="try-us-section">
+    <ion-button color="success" size="large" routerLink="/user/register"
+      >TRY US NOW</ion-button
+    >
+  </div>
+  <div class="about-container">
+    <ion-grid class="feature-section">
+      <ion-row>
+        <ion-col>
+          <ion-card color="light" class="pb-32">
+            <ion-card-header>
+              <ion-card-title class="heading-card"> SERVICES </ion-card-title>
+            </ion-card-header>
+            <div class="separator-line"></div>
+            <ion-card-content class="ion-padding-bottom">
+              <p class="text">
+                <ion-text color="dark">
+                  <strong>
+                    Do you spend way too much time looking for an information through sites?
+                  </strong>
+                  <br />
+                  dont worry we have you covered, We have the solution that allows you 
+                  to obtain all information with simple chats and clicks.
+                </ion-text>
+              </p>
+  
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" sizeLg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>
+                <ion-text color="primary">Connect</ion-text> with people and solve your problems
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content class="features">
+              <img src="assets/images/about/about-connection.svg" alt="image" />
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" sizeLg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>
+                <ion-text color="primary">Check</ion-text> the nearest services
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content class="features">
+              <img src="assets/images/about/about1.png" alt="image" />
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" sizeLg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>
+                <ion-text color="primary">Save</ion-text> your Time
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content class="features">
+              <img src="assets/images/about/about2.png" alt="image" />
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div style="height: 100px"></div>
+  </div>
+
+  <div class="contact-section">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" sizeLg="5" sizeXl="6" class="left-side">
+          <div class="heading">Let's get in touch</div>
+          <div class="sub-heading">
+            Have an inquiry or some feedback for us?
+          </div>
+        </ion-col>
+        <ion-col size="12" sizeLg="7" sizeXl="6">
+          <app-contact-form> </app-contact-form>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

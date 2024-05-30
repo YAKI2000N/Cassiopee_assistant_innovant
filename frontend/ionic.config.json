@@ -1,0 +1,7 @@
+{
+  "name": "GlobaLINK-Cassiopé",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

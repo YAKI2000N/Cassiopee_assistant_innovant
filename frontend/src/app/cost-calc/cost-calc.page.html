@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title> Life Cost Calculator</ion-title>
+  
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="mortgage-calc-container">
+      <ion-grid class="ion-margin-top">
+        <ion-row>
+          <ion-col sizeXl="12" class="ion-padding">
+            <h1>How a Monthly Cost calculator can help ?</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col sizeXl="12" sizeXl="7">
+            <app-cost-core-calc [boxShadow]="false"></app-cost-core-calc>
+          </ion-col>
+        </ion-row>        
+      </ion-grid>
+    </div>
+</ion-content>
+  

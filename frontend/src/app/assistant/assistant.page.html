@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>assistant</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let message of messages">
+      <ion-label [ngClass]="{'user-message': message.user, 'bot-message': !message.user}">
+        {{ message.text }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-input [(ngModel)]="userInput" placeholder="Type a message..." type="text"></ion-input>
+    <ion-button (click)="sendMessage()" slot="end">Send</ion-button>
+  </ion-item>
+</ion-content>
